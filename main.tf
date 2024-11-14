@@ -93,8 +93,8 @@ resource "aws_s3_bucket" "data_bucket" {
 resource "aws_db_instance" "main_db" {
   allocated_storage    = 20
   engine               = "mysql"
-  engine_version       = "5.7"
-  instance_class       = "db.t2.micro"
+  engine_version       = "5.7.33"
+  instance_class       = "db.t3.micro"
   username             = "admin"
   password             = "mypassword123"
   parameter_group_name = "default.mysql5.7"
